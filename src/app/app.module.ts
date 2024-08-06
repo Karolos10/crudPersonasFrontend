@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { ListarComponent } from './Persona/listar/listar.component';
 import { EditarComponent } from './Persona/editar/editar.component';
 import { AgregarComponent } from './Persona/agregar/agregar.component';
+import { FormsModule } from '@angular/forms';
+import { ServiceService } from './Service/service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { AgregarComponent } from './Persona/agregar/agregar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
